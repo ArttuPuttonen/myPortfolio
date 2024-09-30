@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-scroll"
 import {logo} from '../../assets/index';
 import { navLinksdata } from '../../constants/index';
 
@@ -14,7 +15,7 @@ function Navbar() {
                         navLinksdata.map((navlink)=>(
                             <li className="text-base font-normal text-grey-400 tracking-wide cursor-pointer
                             hover:text-designColor duration-300" key={navlink._id}>
-                                {navlink.title}
+                               <Link activeClass="active" to={navlink.link} spy={true} smooth={true} offset={-70} duration={500}>{navlink.title}</Link> 
                             </li>
                    ))}
                 </ul>
