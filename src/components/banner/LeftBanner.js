@@ -56,7 +56,7 @@ const LeftBanner = () => {
                 </span>
             </div>
         </div>
-        <div>
+        {/* <div>
         <h2 className="text-base uppercase font-titleFont mb-4">
                 Best skills at
             </h2>
@@ -71,7 +71,7 @@ const LeftBanner = () => {
                     <AiOutlinePython />
                 </span>
             </div>
-        </div>
+        </div> */}
     </div>
     </div>
     )
