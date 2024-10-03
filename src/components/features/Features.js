@@ -15,7 +15,6 @@ function Features() {
         <Card title="Business Strategy" des="lorem ipsum lorem askldfaklf asdflkasdf klasgbdfaklsjhf asdlfahsdf asdölffsdlk lökasdlkjöas" icon={<FaBars/>}/>
         <Card title="Business Strategy" des="lorem ipsum lorem askldfaklf asdflkasdf klasgbdfaklsjhf asdlfahsdf asdölffsdlk lökasdlkjöas" icon={<FaBars/>}/>
         <Card title="Business Strategy" des="lorem ipsum lorem askldfaklf asdflkasdf klasgbdfaklsjhf asdlfahsdf asdölffsdlk lökasdlkjöas" icon={<FaBars/>}/>
-        
         </div>
         </section>
     );

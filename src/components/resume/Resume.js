@@ -21,14 +21,18 @@ const Resume = () => {
             </div>
             <div className="mt-14 w-1/2 h-[1000px] border-l-[6px] border-black
             border-opacity-30 flex flex-col gap-10">
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
+                <ResumeCard
+                title="University of Applied Sciences"
+                />
+                <ResumeCard 
+                title="University"/>
+                <ResumeCard 
+                title="High School"/>
                 <ResumeCard 
                 title="Comprehensive School"
                 subTitle="Martinlaakson Yhteinäiskoulu (2010 - 2019)"
                 result="9.2/10"
-                des="The first 9 years of Finnish comprehensive school. Comprehensive school is mandatory for everyone in Finland" />
+                des="The first 9 years of Finnish school system. Comprehensive school is mandatory for everyone in Finland" />
             </div>
         </section>
     );
