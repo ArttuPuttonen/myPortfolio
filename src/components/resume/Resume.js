@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../layouts/Title';
-import ResumeCard from './ResumeCard';
+import Education from './Education';
 
 const Resume = () => {
     return (
@@ -15,25 +15,7 @@ const Resume = () => {
                 <li className="resumeLi">Skills and Certifications </li>
             </ul>
             </div>
-            <div className="py-12 font-titleFont">
-                <p className="text-sm text-designColor tracking-[4px]">2010 &rarr; Present</p>
-                <h2 className="text-4xl font-bold">Education</h2>
-            </div>
-            <div className="mt-14 w-1/2 h-[1000px] border-l-[6px] border-black
-            border-opacity-30 flex flex-col gap-10">
-                <ResumeCard
-                title="University of Applied Sciences"
-                />
-                <ResumeCard 
-                title="University"/>
-                <ResumeCard 
-                title="High School"/>
-                <ResumeCard 
-                title="Comprehensive School"
-                subTitle="Martinlaakson Yhteinäiskoulu (2010 - 2019)"
-                result="9.2/10"
-                des="The first 9 years of Finnish school system. Comprehensive school is mandatory for everyone in Finland" />
-            </div>
+        <Education />
         </section>
     );
 }
