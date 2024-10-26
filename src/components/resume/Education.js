@@ -1,10 +1,11 @@
 import React from 'react';
 import ResumeCard from './ResumeCard';
+import { motion } from 'framer-motion';
 
 const Education = () => {
     return (
         <div>
-            <div className="w-full flex gap-20">
+            <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{duration:.5}}} className="w-full flex gap-20">
             <div>
             <div className="mt-16 py-6 font-titleFont">
                 <p className="text-sm text-designColor tracking-[4px]">2010 &rarr; Present</p>
@@ -47,7 +48,7 @@ const Education = () => {
                 des="The first 9 years of Finnish school system. Comprehensive school is mandatory for everyone in Finland" />
             </div>
             </div>
-            </div>
+            </motion.div>
         </div>
     );
 }
