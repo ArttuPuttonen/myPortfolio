@@ -14,7 +14,7 @@ const Resume = () => {
             des="My Resume"/> 
             </div>
             <div>
-            <ul className="w-full grid grid-cols-2">
+            <ul className="w-full grid grid-cols-1 md:grid-cols-2">
                 <li onClick={()=> setEducationData(true) & setSkillsData(false)}  className={`${
               educationData
                 ? "border-designColor rounded-lg"
