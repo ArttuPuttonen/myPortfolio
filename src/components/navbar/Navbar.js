@@ -10,7 +10,7 @@ function Navbar() {
                 <h3>logo tähän</h3>
             </div>
             <div>
-                <ul className="flex items-center gap-10">
+                <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
                     {
                         navLinksdata.map((navlink)=>(
                             <li className="text-base font-normal text-grey-400 tracking-wide cursor-pointer
