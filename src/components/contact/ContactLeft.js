@@ -23,7 +23,7 @@ const ContactLeft = () => {
                 Email: <span className="text-lightText">arskaputtonen@gmail.com</span>
             </p>
          </div>
-         <div className="flex flex-col">
+         <div className="flex flex-col gap-2">
             <h2 className="text-base uppercase font-titleFont mb-4">
                 Find me on
             </h2>

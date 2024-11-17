@@ -4,6 +4,8 @@ import {logo} from '../../assets/index';
 import { FiMenu } from 'react-icons/fi';
 import { MdClose } from 'react-icons/md';
 import { navLinksdata } from '../../constants/index';
+import { FaFacebookF, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+
 
 
 function Navbar() {
@@ -29,23 +31,52 @@ function Navbar() {
                     {
                         showMenu && (
                             <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
-                                <div>
+                                <div className="flex flex-col gap-8 py-2 relative">
                                 <div>
                                 {/* className="w-32 src={logo} alt="logo" */}
                                     <h2>Logo tähän</h2> 
                                     <p className="text-sm text-gray-400 mt-2">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt facilis eos quaerat odit exercitationem soluta sequi perspiciatis, dolorem incidunt reprehenderit. Facere incidunt voluptas sequi corporis quam itaque eveniet neque et!
-
                                     </p>
                                 </div>
-                                </div>
+                                <ul className="flex flex-col gap-4">
+                                    {
+                                        navLinksdata.map((navlink)=>(
+                                            <li  className="text-base font-normal text-grey-400 tracking-wide cursor-pointer
+                                            hover:text-designColor duration-300" key={navlink._id}>
+                                               <Link 
+                                               onClick={()=> setShowMenu(false)}
+                                               activeClass="active" to={navlink.link} spy={true} smooth={true} offset={-70} duration={500}>{navlink.title}</Link> 
+                                            </li>
+                                       ))}
+                                </ul> 
+                                <div className="flex flex-col gap-4">
+                                                <h2 className="text-base uppercase font-titleFont mb-1 mt-2">
+                                                    Find me on
+                                                </h2>
+                                                <div className="flex gap-2">
+                                        <span className="bannerIcon">
+                                            <FaFacebookF />
+                                        </span>
+                                        <span className="bannerIcon">
+                                            <FaInstagram />
+                                        </span>
+                                        <span className="bannerIcon">
+                                            <FaLinkedin />
+                                        </span>
+                                        <span className="bannerIcon">
+                                            <FaGithub />
+                                        </span>
+                                    </div>
+                                    </div>                              
                                 <span 
                                 onClick={()=> setShowMenu(false)}
                                 className="absolute top-4 right-4 text-gray-400 hover:text-designColor
                                 duration-300 text-2xl cursor-pointer">
                                 <MdClose/>
-
                                 </span>
+                                </div>
+
                             </div>
                         )
                     }
