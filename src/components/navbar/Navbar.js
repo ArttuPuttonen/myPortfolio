@@ -4,7 +4,8 @@ import {logo} from '../../assets/index';
 import { FiMenu } from 'react-icons/fi';
 import { MdClose } from 'react-icons/md';
 import { navLinksdata } from '../../constants/index';
-import { FaFacebookF, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import Social from '../layouts/Social';
+
 
 
 
@@ -58,20 +59,7 @@ function Navbar() {
                                                 <h2 className="text-base uppercase font-titleFont mb-1 mt-2">
                                                     Find me on
                                                 </h2>
-                                                <div className="flex gap-2">
-                                        <span className="bannerIcon">
-                                            <FaFacebookF />
-                                        </span>
-                                        <span className="bannerIcon">
-                                            <FaInstagram />
-                                        </span>
-                                        <span className="bannerIcon">
-                                            <FaLinkedin />
-                                        </span>
-                                        <span className="bannerIcon">
-                                            <FaGithub />
-                                        </span>
-                                    </div>
+                                            <Social gap="gap-2"/>
                                     </div>                              
                                 <span 
                                 onClick={()=> setShowMenu(false)}

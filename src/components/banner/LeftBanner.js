@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import { FaFacebookF, FaInstagram, FaLinkedin, FaGithub} from 'react-icons/fa';
+import Social from '../layouts/Social';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
@@ -39,37 +39,8 @@ const LeftBanner = () => {
             <h2 className="text-base uppercase font-titleFont mb-4">
                 Find me on
             </h2>
-            <div className="flex gap-4">
-                <span className="bannerIcon">
-                    <FaFacebookF />
-                </span>
-                <span className="bannerIcon">
-                    <FaInstagram />
-                </span>
-                <span className="bannerIcon">
-                    <FaLinkedin />
-                </span>
-                <span className="bannerIcon">
-                    <FaGithub />
-                </span>
-            </div>
+            <Social />
         </div>
-        {/* <div>
-        <h2 className="text-base uppercase font-titleFont mb-4">
-                Best skills at
-            </h2>
-        <div className="flex gap-4">
-                <span className="bannerIcon">
-                    <FaReact />
-                </span>
-                <span className="bannerIcon">
-                    <ImHtmlFive2 />
-                </span>
-                <span className="bannerIcon">
-                    <AiOutlinePython />
-                </span>
-            </div>
-        </div> */}
     </div>
     </div>
     )

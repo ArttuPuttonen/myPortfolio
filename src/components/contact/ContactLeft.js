@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { hand_shake } from '../../assets/index';
+import Social from '../layouts/Social';
 
 const ContactLeft = () => {
     return(
@@ -27,20 +27,7 @@ const ContactLeft = () => {
             <h2 className="text-base uppercase font-titleFont mb-4">
                 Find me on
             </h2>
-            <div className="flex gap-4">
-    <span className="bannerIcon">
-        <FaFacebookF />
-    </span>
-    <span className="bannerIcon">
-        <FaInstagram />
-    </span>
-    <span className="bannerIcon">
-        <FaLinkedin />
-    </span>
-    <span className="bannerIcon">
-        <FaGithub />
-    </span>
-</div>
+            <Social />
          </div>
     </div>
     )
