@@ -13,7 +13,8 @@ function Navbar() {
     return (
         <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
             <div>
-                <h3>logo tähän</h3>
+                <h3 className="font-bold">ARTTU</h3>
+                <h3 className="text-designColor font-bold">PUTTONEN</h3>
             </div>
             <div>
                 <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -34,7 +35,10 @@ function Navbar() {
                                 <div className="flex flex-col gap-8 py-2 relative">
                                 <div>
                                 {/* className="w-32 src={logo} alt="logo" */}
-                                    <h2>Logo tähän</h2> 
+                                    <div className="pb-3">
+                                        <h3 className="font-bold">ARTTU</h3>
+                                        <h3 className="text-designColor font-bold">PUTTONEN</h3>
+                                    </div>
                                     <p className="text-sm text-gray-400 mt-2">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt facilis eos quaerat odit exercitationem soluta sequi perspiciatis, dolorem incidunt reprehenderit. Facere incidunt voluptas sequi corporis quam itaque eveniet neque et!
                                     </p>
