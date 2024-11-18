@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from "react-scroll"
-import {logo} from '../../assets/index';
+import TextLogo from '../layouts/TextLogo';
 import { FiMenu } from 'react-icons/fi';
 import { MdClose } from 'react-icons/md';
 import { navLinksdata } from '../../constants/index';
@@ -13,10 +13,7 @@ function Navbar() {
     const [showMenu, setShowMenu] = useState(false);
     return (
         <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-            <div>
-                <h3 className="font-bold">ARTTU</h3>
-                <h3 className="text-designColor font-bold">PUTTONEN</h3>
-            </div>
+            <TextLogo/>
             <div>
                 <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
                     {
@@ -35,11 +32,7 @@ function Navbar() {
                             <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
                                 <div className="flex flex-col gap-8 py-2 relative">
                                 <div>
-                                {/* className="w-32 src={logo} alt="logo" */}
-                                    <div className="pb-3">
-                                        <h3 className="font-bold">ARTTU</h3>
-                                        <h3 className="text-designColor font-bold">PUTTONEN</h3>
-                                    </div>
+                                    <TextLogo pb="pb-3"/>
                                     <p className="text-sm text-gray-400 mt-2">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt facilis eos quaerat odit exercitationem soluta sequi perspiciatis, dolorem incidunt reprehenderit. Facere incidunt voluptas sequi corporis quam itaque eveniet neque et!
                                     </p>
