@@ -16,7 +16,7 @@ const Education = () => {
                 <ResumeCard
                 title="University of Applied Sciences"
                 subTitle="Tampere University of Applied Sciences (2023-->)"
-                result="3,45/5 (current)"
+                result="3,45/5"
                 des="I am currently studying Information and Communication Technology in Tampere University of Applied Sciences.
                 So far I have gained knowledge in programming, databases, web development and more. I have 164/240 ECTS credits."/>
                 <ResumeCard 

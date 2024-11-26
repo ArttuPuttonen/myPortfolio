@@ -50,3 +50,6 @@ const Card = ({title, des, modalContent, icon}) => {
 
 
 export default Card;
+
+
+

@@ -1,5 +1,6 @@
 import React from 'react';
-import {FaBars, FaGraduationCap, FaBriefcase, FaCubes} from 'react-icons/fa';
+import {FaGraduationCap, FaBriefcase, FaCubes} from 'react-icons/fa';
+import { IoRocketSharp } from "react-icons/io5";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { GiMountainClimbing } from "react-icons/gi" 
 import Title from '../layouts/Title';
@@ -37,7 +38,10 @@ function Features() {
         title="CEO of Kuutiostore" 
         des="The CEO of an online store that sells Rubik's cubes and similar puzzles for speedsolving"
         icon={<FaCubes/>}
-        modalContent=""
+        modalContent="Together with my friend, I founded an online store for Rubik's cubes and other similar twisty puzzles made especially for competition usage.
+        My tasks include maintaining our website, product photography, making YouTube instructional videos, marketing, and other tasks related to running the company and administration. I also used to pack and ship the online store orders, but 
+        summer 2024 we decided to externalize our warehouse. 
+        I have learned a lot about business operations through practical experience, and I believe that the skills I have learned in practice are more valuable than the skills learned in theory."
         />
         
         
@@ -70,13 +74,23 @@ function Features() {
 
 
         <Card 
-        title="Business Strategy"
-        des="lorem ipsum lorem askldfaklf asdflkasdf klasgbdfaklsjhf asdlfahsdf asdölffsdlk lökasdlkjöas" 
-        icon={<GiMountainClimbing/>}/>
+        title="Sports"
+        des="I have done a lot of different sports in my life. Right now I am mostly into climbing." 
+        icon={<GiMountainClimbing/>}
+        modalContent="I have done a lot of different sports in my life. When I was a child I played football for a couple of years, and floorball for a little bit longer than that. When I grew up I started playing badminton and did that actively about 4 years.
+        Also I was going to the gym all that time. During the last years of comprehensive school and most of the time in high school I was mostly going to the gym.
+        Nowadays I am mostly into climbing, and I have been doing it actively since early 2023. I do indoors bouldering and rope climbing, but I am looking forward to do some outdoors rock climbing in near future."
+        />
         
         
         
-        <Card title="Business Strategy" des="lorem ipsum lorem askldfaklf asdflkasdf klasgbdfaklsjhf asdlfahsdf asdölffsdlk lökasdlkjöas" icon={<FaBars/>}/>
+        <Card title="Future" 
+        des="My main goal is to become a full-time entrepreneur. I also have some goals for my hobbies and sports" 
+        icon={<IoRocketSharp/>}
+        modalContent="After starting my first company Kuutiostore Oy, I realized that at some point I want to become a full-time entrepreneur.
+        I don't have a world-changing business ideas yet, but I am constantly trying to come up with some new and innovative ideas that I could build a business around of.
+        "
+        />
         </div>
         </section>
     );
