@@ -8,7 +8,7 @@ const ProjectCard = ({title, des, img}) => {
         bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b 
         hover:from-gray-900 hover:gray-900 transition-colors duration-1000">
             <div className="w-full h-[80%] overflow-hidden rounded-lg">
-                <img className="w-full h-60 object-cover group-hover:scale-110 duration-300" src={img} alt="img"/>
+                <img className="w-full h-50 object-cover group-hover:scale-110 duration-300" src={img} alt="img"/>
             </div>
             <div className="w-full mt-5 flex flex-col gap-6">
                 <div>

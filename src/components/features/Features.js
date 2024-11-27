@@ -17,7 +17,7 @@ function Features() {
         title="Studies"
         des="Student of information technology, majoring software engineering. 164/240 ECTS credits currently." 
         icon={<FaGraduationCap/>}
-        modalContent="First and foremost I am a student. After High School first applied and got in to study automation technology in the University of Tampere.
+        modalContent="First and foremost I am a student. After High School I first applied and got in to study automation technology in the University of Tampere.
         After a few months I realized that it was not for me, and I wanted to do something more practical. I decided to apply to Tampere University of Applied Sciences to study information technology, what was also one of the initial choices I was considering after high school.
         Luckily I got in, and I have been very satisfied with the program. I have learnt a lot about coding, databases, hardware and more during my time here."
         />
@@ -36,7 +36,7 @@ function Features() {
 
         <Card 
         title="CEO of Kuutiostore" 
-        des="The CEO of an online store that sells Rubik's cubes and similar puzzles for speedsolving"
+        des="The CEO of an online store that sells Rubik's cubes and similar puzzles for speedsolving!"
         icon={<FaCubes/>}
         modalContent="Together with my friend, I founded an online store for Rubik's cubes and other similar twisty puzzles made especially for competition usage.
         My tasks include maintaining our website, product photography, making YouTube instructional videos, marketing, and other tasks related to running the company and administration. I also used to pack and ship the online store orders, but 
@@ -78,14 +78,14 @@ function Features() {
         des="I have done a lot of different sports in my life. Right now I am mostly into climbing." 
         icon={<GiMountainClimbing/>}
         modalContent="I have done a lot of different sports in my life. When I was a child I played football for a couple of years, and floorball for a little bit longer than that. When I grew up I started playing badminton and did that actively about 4 years.
-        Also I was going to the gym all that time. During the last years of comprehensive school and most of the time in high school I was mostly going to the gym.
-        Nowadays I am mostly into climbing, and I have been doing it actively since early 2023. I do indoors bouldering and rope climbing, but I am looking forward to do some outdoors rock climbing in near future."
+        Also I was going to the gym all that time. During the last years of comprehensive school and in high school I was mostly going to the gym.
+        Nowadays I am mostly into climbing, and I have been doing it actively since early 2024. I do indoors bouldering and rope climbing, but I am looking forward to do some outdoors rock climbing in near future."
         />
         
         
         
         <Card title="Future" 
-        des="My main goal is to become a full-time entrepreneur. I also have some goals for my hobbies and sports" 
+        des="My main goal is to become a full-time entrepreneur! I also have some goals for my hobbies and sports too." 
         icon={<IoRocketSharp/>}
         modalContent="After starting my first company Kuutiostore Oy, I realized that at some point I want to become a full-time entrepreneur.
         I don't have a world-changing business ideas yet, but I am constantly trying to come up with some new and innovative ideas that I could build a business around of.

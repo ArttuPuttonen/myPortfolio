@@ -27,11 +27,9 @@ const LeftBanner = () => {
                 />
             </h2>
             <p className="text-base font-bodyFont leading-6 tracking-wide">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. 
-                Duis vulputate commodo lectus, ac blandit elit tincidunt id. 
-                Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et luctus enim lorem sit amet dolor. 
-                Vestibulum nec velit ante. Praesent placerat risus quis eros.
+                I am Arttu Puttonen, a software engineering student and an entrepreneur. On this website you can
+                find information about me, my projects, and my education and work experience. If you want to contact me, you can do so
+                using the contact form at the bottom of this website. 
             </p>
         </div>
         <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">

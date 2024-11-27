@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../layouts/Title';
 import ProjectCard from './ProjectCard';
-import {kuu} from '../../assets/index';
+import {coming_soon} from '../../assets/index';
 
 const Projects = () => {
     return (
@@ -11,12 +11,12 @@ const Projects = () => {
             des="My projects"/> 
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
-                <ProjectCard title="Kuu" img={kuu} des="lorem lorem lorem vittu saatanaaaa ajfsdljkasdf adsf asdf asdf asdf asdf  asdfasdflhkfasdk"/>
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+                <ProjectCard title="Coming soon" img={coming_soon} des="Projects work in progress"/>
+                <ProjectCard title="Coming soon" img={coming_soon} des="Projects work in progress"/>
+                <ProjectCard title="Coming soon" img={coming_soon} des="Projects work in progress"/>
+                <ProjectCard title="Coming soon" img={coming_soon} des="Projects work in progress"/>
+                <ProjectCard title="Coming soon" img={coming_soon} des="Projects work in progress"/>
+                <ProjectCard title="Coming soon" img={coming_soon} des="Projects work in progress"/>
             </div>
         </section>
     );
