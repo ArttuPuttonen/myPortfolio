@@ -31,7 +31,7 @@ const LanguageSkills = () => {
             </div>
 
             {/* Language Skills Progress Bars */}
-            <div className="lgl:w-2/3">
+            <div className="lgl:w-2/3 w-full">
                 <div className="w-full flex flex-col gap-6">
                     {[
                         { language: "Finnish", level: "Native", percentage: "100" },
@@ -39,22 +39,21 @@ const LanguageSkills = () => {
                         { language: "Spanish", level: "A2", percentage: "40" },
                     ].map((item, index) => (
                         <div key={index} className="overflow-x-hidden">
-                            <p className="text-sm uppercase font-medium">
-                                {item.language} - {item.level}
-                            </p>
-                            <span className="w-full h-2 bg-opacity-50 bg-black inline-flex rounded-md mt-2">
-                                <motion.span
+                            <div className="flex justify-between items-center mb-1">
+                                <p className="text-sm uppercase font-medium">
+                                    {item.language} - {item.level}
+                                </p>
+                                <p className="text-sm font-semibold text-white">{item.percentage}%</p>
+                            </div>
+                            <div className="relative w-full h-2 bg-opacity-50 bg-black rounded-md">
+                                <motion.div
                                     initial={{ x: "-100%", opacity: 0 }}
                                     animate={{ x: 0, opacity: 1 }}
                                     transition={{ duration: 0.5, delay: 0.5 }}
                                     style={{ width: `${item.percentage}%` }}
-                                    className="h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-                                >
-                                    <span className="absolute -top-7 right-0 text-sm text-white">
-                                        {item.percentage}%
-                                    </span>
-                                </motion.span>
-                            </span>
+                                    className="h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md"
+                                ></motion.div>
+                            </div>
                         </div>
                     ))}
                 </div>
