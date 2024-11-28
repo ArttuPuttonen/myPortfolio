@@ -4,7 +4,7 @@ import Social from '../layouts/Social';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-        words: ['Software Engineer Student.', 'UI Designer.', 'Freelancer.'],
+        words: ['Student.', 'UI Designer.', 'Freelancer.'],
         loop: true,
         typeSpeed: 20,
         deleteSpeed: 10,

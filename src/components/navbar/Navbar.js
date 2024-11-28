@@ -34,7 +34,9 @@ function Navbar() {
                                 <div>
                                     <TextLogo pb="pb-3"/>
                                     <p className="text-sm text-gray-400 mt-2">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt facilis eos quaerat odit exercitationem soluta sequi perspiciatis, dolorem incidunt reprehenderit. Facere incidunt voluptas sequi corporis quam itaque eveniet neque et!
+                                    I am Arttu Puttonen, a software engineering student and an entrepreneur. On this website you can
+                find information about me, my projects, and my education and work experience. If you want to contact me, you can do so
+                using the contact form at the bottom of this website. 
                                     </p>
                                 </div>
                                 <ul className="flex flex-col gap-4">
