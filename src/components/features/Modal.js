@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const Modal = ({ title, content, onClose }) => {
+    useEffect(() => {
+        // Disable scroll when the modal is open
+        document.body.style.overflow = 'hidden';
+
+        // Cleanup function to restore scrolling
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, []);
+
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
             {/* Animated Modal Box */}
