@@ -3,7 +3,11 @@ import { motion } from "framer-motion";
 
 const LanguageSkills = () => {
     return (
-        <div className="w-full mt-14 flex flex-col lgl:flex-row items-center gap-10">
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.5 } }}
+            className="w-full mt-14 flex flex-col lgl:flex-row items-center gap-10"
+        >
             {/* Text Box for Description */}
             <div className="lgl:w-1/3 flex-shrink-0 flex flex-col justify-center">
                 <div className="font-titleFont flex flex-col gap-2">
@@ -12,14 +16,16 @@ const LanguageSkills = () => {
                 </div>
                 <div className="text-gray-400 text-base leading-6 mt-4">
                     <p>
-                        These language ratings are based on the <strong>CEFR</strong> framework 
-                        (Common European Framework of Reference for Languages), which categorizes 
-                        proficiency levels from A1 (Beginner) to C2 (Mastery). 
+                        These language ratings are based on the{" "}
+                        <strong className="text-designColor">CEFR</strong> framework
+                        (Common European Framework of Reference for Languages), which categorizes
+                        proficiency levels from A1 (Beginner) to C2 (Mastery).
                     </p>
                     <p className="mt-4">
-                        Finnish is my native language. I have a <strong>C1</strong> level in English, 
-                        and I’m currently at <strong>A2</strong> level in Spanish. I am currently 
-                        working on my Spanish, and my goal is to become B1 speaker.
+                        Finnish is my native language. I have a{" "}
+                        <strong className="text-designColor">C1</strong> level in English, and
+                        I’m currently at <strong className="text-designColor">A2</strong> level
+                        in Spanish. I am working on improving my Spanish and aim to reach B1.
                     </p>
                 </div>
             </div>
@@ -53,7 +59,7 @@ const LanguageSkills = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
