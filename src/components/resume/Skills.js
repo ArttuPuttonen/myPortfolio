@@ -13,16 +13,15 @@ const Skills = () => {
             <div className="w-full lgl:w-1/2 flex flex-col justify-between">
                 <div className="py-12 pb-2 font-titleFont flex flex-col gap-2">
                     <p className="text-sm text-designColor tracking-[4px]">Features</p>
-                    <h2 className="text-3xl md:text-4xl font-bold">Design Skills</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold">Skills</h2>
                 </div>
                 <div className="mt-10 flex-grow w-full flex flex-col gap-6">
                     {[
-                        { skill: "Photography", percentage: "100" },
-                        { skill: "Editing", percentage: "90" },
-                        { skill: "Graphic Design", percentage: "85" },
-                        { skill: "Video Production", percentage: "80" },
-                        { skill: "Web Design", percentage: "75" },
-                        { skill: "Illustration", percentage: "70" },
+                        { skill: "HTML, CSS, JavaScript", percentage: "85" },
+                        { skill: "Python", percentage: "65" },
+                        { skill: "C++", percentage: "55" },
+                        { skill: "Photography", percentage: "80" },
+                        { skill: "Video Production", percentage: "70" },
                     ].map((item, index) => (
                         <div key={index} className="overflow-x-hidden">
                             <p className="text-sm uppercase font-medium">{item.skill}</p>
@@ -48,28 +47,31 @@ const Skills = () => {
             <div className="w-full lgl:w-1/2 flex flex-col justify-between">
                 <div className="py-12 pb-2 font-titleFont flex flex-col gap-2">
                     <p className="text-sm text-designColor tracking-[4px]">Features</p>
-                    <h2 className="text-3xl md:text-4xl font-bold">Skills and Certifications</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold">Certifications</h2>
                 </div>
                 <div className="mt-10 flex-grow w-full grid grid-cols-2 gap-6">
-                    {[
-                        { name: "Hygiene Passport", status: "Achieved", icon: <FaCheckCircle className="text-green-500 text-xl" /> },
-                        { name: "First Aid Certificate", status: "Pending", icon: <FaTimesCircle className="text-red-500 text-xl" /> },
-                        { name: "Driving License", status: "Achieved", icon: <FaCheckCircle className="text-green-500 text-xl" /> },
-                        { name: "Security Training", status: "Pending", icon: <FaTimesCircle className="text-red-500 text-xl" /> },
-                        { name: "Leadership Training", status: "Achieved", icon: <FaCheckCircle className="text-green-500 text-xl" /> },
-                        { name: "Advanced Excel Skills", status: "Achieved", icon: <FaCheckCircle className="text-green-500 text-xl" /> },
-                    ].map((item, index) => (
-                        <div
-                            key={index}
-                            className="bg-gradient-to-r from-blue-600 to-pink-500 p-4 rounded-md shadow-lg flex items-center justify-between"
-                        >
-                            <div>
-                                <p className="text-sm font-medium">{item.name}</p>
-                                <p className="text-xs text-gray-300">{item.status}</p>
-                            </div>
-                            {item.icon}
-                        </div>
-                    ))}
+                {[
+    { name: "Hygiene Passport", status: "Achieved", icon: <FaCheckCircle className="text-green-500 text-xl" /> },
+    { name: "First Aid Certificate", status: "Pending", icon: <FaTimesCircle className="text-red-500 text-xl" /> },
+    { name: "Driving License", status: "Achieved", icon: <FaCheckCircle className="text-green-500 text-xl" /> },
+    { name: "Security Training", status: "Pending", icon: <FaTimesCircle className="text-red-500 text-xl" /> },
+    { name: "Leadership Training", status: "Pending", icon: <FaTimesCircle className="text-red-500 text-xl" /> },
+    { name: "Hot Work License", status: "Pending", icon: <FaTimesCircle className="text-red-500 text-xl" /> },
+].map((item, index) => (
+    <div
+        key={index}
+        className="bg-gradient-to-r from-blue-600 to-pink-500 p-4 rounded-md shadow-lg flex items-center justify-between"
+    >
+        <div>
+            <p className="text-sm font-medium">{item.name}</p>
+            <p className="text-xs text-gray-300">{item.status}</p>
+        </div>
+        {/* Icon Wrapper */}
+        <div className="flex items-center justify-center bg-white rounded-full p-1 shadow-md">
+            {item.icon}
+        </div>
+    </div>
+))}
                 </div>
             </div>
         </motion.div>
