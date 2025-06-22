@@ -15,7 +15,7 @@ function Features() {
 
         <Card
         title="Studies"
-        des="Student of information technology, majoring software engineering. 164/240 ECTS credits currently." 
+        des="Student of information technology, majoring software engineering. 206/240 ECTS credits currently." 
         icon={<FaGraduationCap/>}
         modalContent="First and foremost I am a student. After High School I first applied and got in to study automation technology in the University of Tampere.
         After a few months I realized that it was not for me, and I wanted to do something more practical. I decided to apply to Tampere University of Applied Sciences to study information technology, what was also one of the initial choices I was considering after high school.
@@ -24,13 +24,12 @@ function Features() {
 
 
         <Card
-        title="Freelancing" 
-        des="I build and host websites with low student price starting only at 299€ + 29€/month for hosting! " 
-        icon={<FaBriefcase/>}
-        modalContent="I wanted to start some sort of business related to IT alongside my studies.
-        I decided to start making websites for various purposes, such as portfolio websites for individuals and basic websites for businesses (barbers, restaurants, etc.).
-        I offer all-in-one services, meaning that my service includes building, hosting and updating the website. The price for building website starts at 299€ + 29€/month for hosting. 
-        If you are interested, you can use the contact form below or e-mail me directly."
+        title="Freelancing"
+        des="I'm open to all kinds of freelance work related to web development, programming, or IT in general."
+        icon={<FaBriefcase />}
+        modalContent="I'm open to freelance projects of any kind related to IT—whether it's web development, automation, technical support, or custom software. 
+        I operate under a registered trade name (Business ID: 3462707-1), therefore invoicing and business arrangements are smooth and professional. 
+        If you have a project in mind or want to discuss possibilities, feel free to use the contact form below or email me directly."
         />
 
 
