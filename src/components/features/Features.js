@@ -25,7 +25,7 @@ function Features() {
 
         <Card
         title="Freelancing" 
-        des="I build and host custom websites with low student price. Click for more information! " 
+        des="I build and host websites with low student price starting only at 299€ + 29€/month for hosting! " 
         icon={<FaBriefcase/>}
         modalContent="I wanted to start some sort of business related to IT alongside my studies.
         I decided to start making websites for various purposes, such as portfolio websites for individuals and basic websites for businesses (barbers, restaurants, etc.).
