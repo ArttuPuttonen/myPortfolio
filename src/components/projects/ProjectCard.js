@@ -14,13 +14,13 @@ const ProjectCard = ({ title, des, img, githubLink, websiteLink }) => {
       >
         {/* Image */}
         <div
-          className="w-full h-[80%] overflow-hidden rounded-lg cursor-pointer"
+          className="w-full h-44 overflow-hidden rounded-lg cursor-pointer" // Fixed height
           onClick={() => setIsModalOpen(true)}
         >
           <img
-            className="w-full h-50 object-cover group-hover:scale-110 duration-300"
+            className="w-full h-full object-cover group-hover:scale-110 duration-300"
             src={img}
-            alt="img"
+            alt="project"
           />
         </div>
 
@@ -76,7 +76,7 @@ const ProjectCard = ({ title, des, img, githubLink, websiteLink }) => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking image
+              onClick={(e) => e.stopPropagation()}
               className="max-w-4xl max-h-[90vh] overflow-auto rounded-lg"
             >
               <img src={img} alt="project" className="w-full h-auto rounded-lg" />
