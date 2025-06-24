@@ -84,10 +84,11 @@ function Features() {
         
         
         <Card title="Future" 
-        des="My main goal is to become a full-time entrepreneur! I also have some goals for my hobbies and sports too." 
+        des="After graduating I will be looking for a job in the IT industry, but I would also want to become a full-time entrepreneur at some point." 
         icon={<IoRocketSharp/>}
-        modalContent="After starting my first company Kuutiostore Oy, I realized that at some point I want to become a full-time entrepreneur.
-        I don't have a world-changing business ideas yet, but I am constantly trying to come up with some new and innovative ideas that I could build a business around of.
+        modalContent="After graduating, I plan to seek employment in the IT industry, ideally in a role that allows me to apply my skills in software development and project management.
+        However, I also aspire to become a full-time entrepreneur in the future.
+        I believe that entrepreneurship offers the opportunity to innovate, create value, and make a significant impact in the tech industry.
         "
         />
         </div>
