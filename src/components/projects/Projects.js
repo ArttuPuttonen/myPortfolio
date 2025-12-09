@@ -18,12 +18,14 @@ const Projects = () => {
                 title="Speedcubing Finland ry"
                 img={Speedcubing_Finland} des="I have developed most of the Speedcubing Finland's website,
                 including a database system for handling the membership register." 
-                websiteLink="https://speedcubingfinland.fi"/>
+                websiteLink="https://speedcubingfinland.fi"
+                githubLink="https://github.com/Speedcubing-Finland"/>
                 <ProjectCard
                 title="Matkahuolto Tracker"
                 img={Matkahuolto_Tracker}
                 des="I built a Telegram Bot for my company that alerts for packages
-                that stopped moving. The script is in Python and it utilizes Telegram and Matkahuolto APIs!"/>
+                that stopped moving. The script is in Python and it utilizes Telegram and Matkahuolto APIs!"
+                githubLink="https://github.com/ArttuPuttonen/mh_tracker"/>
                 <ProjectCard
                 title="Cryptocurrency Tracker"
                 img={Crypto_tracker}

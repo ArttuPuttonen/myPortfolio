@@ -4,7 +4,7 @@ import Social from '../layouts/Social';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-        words: ['ICT-Student.','Programmer.','UI/UX Designer.', 'Freelancer.'],
+        words: ['an ICT-Student.','a Programmer.','a UI/UX Designer.', 'a Freelancer.'],
         loop: true,
         typeSpeed: 20,
         deleteSpeed: 10,
@@ -19,7 +19,7 @@ const LeftBanner = () => {
                 <span className="text-designColor capitalize"> Arttu Puttonen </span>
             </h1>
             <h2 className="text-3xl font-bold text-white">
-                a <span>{text}</span>
+                <span>{text}</span>
                 <Cursor 
                 cursorBlinking="false"
                 cursorStyle="|"

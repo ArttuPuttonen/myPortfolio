@@ -27,10 +27,10 @@ const ProjectCard = ({ title, des, img, githubLink, websiteLink }) => {
         {/* Title & Links */}
         <div className="w-full mt-5 flex flex-col gap-6">
           <div>
-            <div className="flex items-center justify-between">
-              <h3 className="text-base uppercase text-designColor font-normal">{title}</h3>
+            <div className="flex items-center justify-between gap-4">
+              <h3 className="text-base uppercase text-designColor font-normal flex-1 pr-4">{title}</h3>
 
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-shrink-0">
                 {githubLink && (
                   <a
                     href={githubLink}
