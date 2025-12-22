@@ -15,7 +15,7 @@ function Features() {
 
         <Card
         title="Studies"
-        des="Student of information technology, majoring software engineering. 206/240 ECTS credits currently." 
+        des="Student of information technology, majoring software engineering. 237/240 ECTS credits currently." 
         icon={<FaGraduationCap/>}
         modalContent="First and foremost I am a student. After High School I first applied and got in to study automation technology in the University of Tampere.
         After a few months I realized that it was not for me, and I wanted to do something more practical. I decided to apply to Tampere University of Applied Sciences to study information technology, what was also one of the initial choices I was considering after high school.
