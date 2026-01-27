@@ -84,11 +84,11 @@ function Features() {
         
         
         <Card title="Future" 
-        des="After graduating I will be looking for a job in the IT industry, but I would also want to become a full-time entrepreneur at some point." 
+        des="After graduating I will be looking for a job in the IT industry, but I am also interested in continuing being a part-time entrepreneur" 
         icon={<IoRocketSharp/>}
         modalContent="After graduating, I plan to seek employment in the IT industry, ideally in a role that allows me to apply my skills in software development and project management.
-        However, I also aspire to become a full-time entrepreneur in the future.
-        I believe that entrepreneurship offers the opportunity to innovate, create value, and make a significant impact in the tech industry.
+        However, I also aspire to continue being a part-time entrepreneur in the future.
+        I believe that entrepreneurship (even as a micro-business owner) offers valuable skills to take more responsibility in larger organizations.
         "
         />
         </div>
