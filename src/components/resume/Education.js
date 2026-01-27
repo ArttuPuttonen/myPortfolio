@@ -53,9 +53,9 @@ const Education = () => {
                 <div className="mt-10 w-full h-auto border-l-[6px] border-black border-opacity-30 flex flex-col gap-10">
                         <ResumeCard
                         title="South Tours, Málaga"
-                        subTitle="Full-Stack Web Developer Intern "
+                        subTitle="Full-Stack Web Developer Intern (5/2025-->7/2025)"
                         result="Spain"
-                        des="This was my first touch working in the field of IT. I was working as a part of international team
+                        des="This 3-month long internship was my first touch working in the field of IT. I was working as a part of international team
                         developing and maintaining the company's internal booking and finance management system. 
                         We integrated a lot of data from different origins to the platform, and worked mostly with JavaScript and PHP."
                     />
