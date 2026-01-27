@@ -21,7 +21,7 @@ const Skills = () => {
                     <div>
                         <h3 className="text-lg text-designColor mb-2 font-semibold uppercase">Languages</h3>
                         <div className="flex flex-wrap gap-2">
-                            {["JavaScript", "Python", "C++", "C", "Java", "HTML", "CSS"].map((lang, i) => (
+                            {["JavaScript", "Python", "HTML", "CSS", "C++ (basics)"].map((lang, i) => (
                                 <span
                                     key={i}
                                     className="bg-[#1e2024] text-gray-300 text-sm px-3 py-1 rounded-full border border-gray-600"
@@ -36,7 +36,7 @@ const Skills = () => {
                     <div>
                         <h3 className="text-lg text-designColor mb-2 font-semibold uppercase">Databases</h3>
                         <div className="flex flex-wrap gap-2">
-                            {["MySQL", "PostgreSQL", "MongoDB", "SQLite", "MySQL Workbench", "phpMyAdmin"].map((db, i) => (
+                            {["MySQL", "MongoDB", "SQLite", "MySQL Workbench", "phpMyAdmin"].map((db, i) => (
                                 <span
                                     key={i}
                                     className="bg-[#1e2024] text-gray-300 text-sm px-3 py-1 rounded-full border border-gray-600"
