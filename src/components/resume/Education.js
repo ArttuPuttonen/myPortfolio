@@ -51,6 +51,14 @@ const Education = () => {
                     <h2 className="text-3xl md:text-4xl font-bold">Working Experience</h2>
                 </div>
                 <div className="mt-10 w-full h-auto border-l-[6px] border-black border-opacity-30 flex flex-col gap-10">
+                        <ResumeCard
+                        title="South Tours, Málaga"
+                        subTitle="Full-Stack Web Developer Intern "
+                        result="Spain"
+                        des="This was my first touch working in the field of IT. I was working as a part of international team
+                        developing and maintaining the company's internal booking and finance management system. 
+                        We integrated a lot of data from different origins to the platform, and worked mostly with JavaScript and PHP."
+                    />
                     <ResumeCard
                         title="Kuutiostore Oy"
                         subTitle="Chief Executive Officer (2022-->)"
@@ -68,12 +76,6 @@ const Education = () => {
                         subTitle="Race Track Worker (6/2021-->2/2022)"
                         result="Helsinki"
                         des="Karting hall customer service. My duties included fixing cars, giving driving instructions, supervising the drives and running group events."
-                    />
-                    <ResumeCard
-                        title="Helsingin Jäätelötehdas"
-                        subTitle="Ice cream stand worker (5/2020-->8/2020)"
-                        result="Helsinki"
-                        des="My first proper summer job. My duties were selling ice cream, and keeping the ice cream stand clean"
                     />
                 </div>
             </div>
