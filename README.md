@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# arttuputtonen.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal site. Vite, React, React Router and Tailwind CSS.
 
-## Available Scripts
+## Develop
 
-In the project directory, you can run:
+```bash
+npm install
+npm run dev
+```
 
-### `npm start`
+## Edit content
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+All text lives in `src/content/`:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `profile.js`: name, email, availability line, social links, navigation
+- `projects.js`: Work page and case studies (`featured: true` puts a project on the home page)
+- `services.js`: Services page
+- `about.js`: story, experience, education, skills, languages. The Home page, the About page and the PDF CV are all built from this file
+- `offscreen.js`: speedcubing stats and climbing
 
-### `npm test`
+Images go in `src/assets/img/` as WebP.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## CV (PDF)
 
-### `npm run build`
+```bash
+brew install tectonic   # once
+npm run cv
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds `cv/cv.tex` from `src/content/about.js` and `profile.js`, compiles it with Tectonic and writes `public/Arttu-Puttonen-CV.pdf`, which the site links to. Run it after editing the content, before `npm run build`. The layout lives in `scripts/build-cv.mjs`; the Schibsted Grotesk font files in `cv/fonts/` are under the SIL Open Font License.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deploy
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Hostinger:** upload the contents of `dist/` to `public_html`. `public/.htaccess` is copied into the build and sends every route to `index.html`, so links like `/work/kuutiostore` work.
+- **Vercel:** `vercel.json` has the same rewrite.

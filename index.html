@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arttu Puttonen | Developer for AI and automation</title>
+    <meta
+      name="description"
+      content="Arttu Puttonen is a freelance developer in Finland building AI agents, workflow automations and the web apps around them."
+    />
+    <meta name="theme-color" content="#f2f4f5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e131b" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arttuputtonen.com/" />
+    <meta property="og:title" content="Arttu Puttonen" />
+    <meta
+      property="og:description"
+      content="Freelance developer in Finland building AI agents, workflow automations and web apps."
+    />
+    <meta property="og:image" content="https://arttuputtonen.com/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      // Apply a saved theme before first paint so there is no flash.
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <noscript>This site needs JavaScript. You can reach me at contact@arttuputtonen.com.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
