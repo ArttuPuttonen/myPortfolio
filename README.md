@@ -21,6 +21,10 @@ All text lives in `src/content/`:
 
 Images go in `src/assets/img/` as WebP.
 
+## Icons
+
+`public/favicon.svg` is the source. After changing it, run `npm run icons` to regenerate `favicon.ico`, `apple-touch-icon.png` and the manifest icons.
+
 ## CV (PDF)
 
 ```bash
