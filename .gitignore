@@ -23,3 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 
 .env
+# Vite
+/dist
+
+# CV build output (the PDF itself is copied to public/)
+/cv/.out
+/cv/portrait.png

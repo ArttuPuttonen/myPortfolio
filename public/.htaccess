@@ -1,0 +1,17 @@
+# Hostinger (LiteSpeed/Apache): serve index.html for every route the SPA owns,
+# so links like /work/kuutiostore work on refresh and when shared.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Hashed build assets never change, so let browsers keep them for a year.
+<IfModule mod_headers.c>
+  <FilesMatch "^assets/.*\.(js|css|webp|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
