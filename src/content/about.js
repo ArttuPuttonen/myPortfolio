@@ -75,7 +75,7 @@ export const education = [
     title: "Bachelor of Engineering, ICT",
     org: "Tampere University of Applied Sciences",
     from: "2023-08",
-    to: "2026-06",
+    to: "2026-04",
     project: "traffic-sign-cnn",
     bullets: [
       "Major in software engineering",
