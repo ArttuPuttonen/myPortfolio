@@ -12,7 +12,7 @@ export const profile = {
 };
 
 export const links = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/arttu-puttonen-733b9829b/" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/arttuputtonen/" },
   { label: "GitHub", href: "https://github.com/ArttuPuttonen" },
   { label: "Instagram", href: "https://www.instagram.com/arddup" },
   { label: "WCA profile", href: "https://www.worldcubeassociation.org/persons/2016PUTT01" },
